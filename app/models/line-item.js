@@ -1,5 +1,5 @@
-import Model from 'ember-data/model';
+import Ember from 'ember';
 
-export default Model.extend({
-  
+export default Ember.Object.extend({//we extend from ember object provides creation and destroying of object, provides hooks other parts of systems can watch for.
+
 });
