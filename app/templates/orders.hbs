@@ -1,1 +1,8 @@
-<h3>Hello from the other side of orders</h3>
+{{#each model as |order|}}
+  {{#link-to "orders.order" order}}
+  <!-- where "order" is route name for a single order and order is the object with the data  -->
+    Order {{order.id}} for {{order.name}}<br>
+  {{/link-to}}
+{{/each}}
+
+{{outlet}}
