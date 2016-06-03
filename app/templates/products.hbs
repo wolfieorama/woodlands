@@ -1,0 +1,8 @@
+{{#each model as |product|}}
+  {{#link-to "products.product" product}}
+  <!-- where "order" is route name for a single order and order is the object with the data  -->
+    Product {{product.title}} for {{product.Price}}<br>
+  {{/link-to}}
+{{/each}}
+
+{{outlet}}
